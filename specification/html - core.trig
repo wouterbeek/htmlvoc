@@ -469,7 +469,7 @@ These functions establish and return the HTML fragment for a node in an HTML doc
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "An HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:document.
 ```
 
@@ -6632,7 +6632,7 @@ This can be rendered in RDF using the HTML vocabulary as follows:
 
   shp:HTMLFragmentSerializationAlgorithm
     a sh:NodeShape;
-    sh:order 2;
+    sh:order 2.0;
     sh:rule rule:HTMLFragmentSerializationAlgorithm;
     sh:target target:HTMLFragmentSerializationAlgorithm;
     skos:prefLabel 'Node shape for HTML fragment serialization algorithm'@en;
@@ -6697,7 +6697,7 @@ This can be rendered in RDF using the HTML vocabulary as follows:
 
   shp:CustomElement
     a sh:NodeShape;
-    sh:order 1;
+    sh:order 1.0;
     skos:prefLabel 'Node shape for custom element'@en;
     skos:definition 'A node shape to establish an individual custom element as a subclass of the class html:CustomElement.'@en;
     sh:rule rule:CustomElement;
@@ -6716,7 +6716,7 @@ This can be rendered in RDF using the HTML vocabulary as follows:
 
   shp:ForeignElement
     a sh:NodeShape;
-    sh:order 1;
+    sh:order 1.0;
     skos:prefLabel 'Node shape for foreign element'@en;
     skos:definition 'A node shape to transform the contents of a foreign element into a html fragment.'@en;
     sh:rule rule:ForeignElement;
@@ -6795,7 +6795,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "A html element in a HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:element.
 
   function:getTextFragment
@@ -6821,7 +6821,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "A HTML text node in a HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:text.
 
   function:getCommentFragment
@@ -6845,7 +6845,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "A HTML comment in a HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:comment.
 
   function:getProcessingInstructionFragment
@@ -6869,7 +6869,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "A HTML processing instruction in a HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:processingInstruction.
 
   function:getDocumentTypeFragment
@@ -6894,7 +6894,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "An HTML DocumentType in a HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:doctype.
 
   function:getDocumentFragment
@@ -6918,7 +6918,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "An HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:document.
 
   function:getChildNodeFragment
@@ -6952,7 +6952,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "A node in an HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:parentNode.
 
   function:getElementAttribute
@@ -6984,7 +6984,7 @@ construct {
     a sh:Parameter;
     sh:datatype xsd:anyURI;
     sh:description "An HTML element in an HTML document.";
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:element.
 
   function:getMemberIndex
@@ -7007,7 +7007,7 @@ construct {
     skos:prefLabel "the getMemberIndex parameter"@en;
     skos:definition "A SHACL parameter"@en;
     sh:class rdfs:ContainerMembershipProperty;
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:property.
 
   function:isMembershipProperty
@@ -7030,6 +7030,6 @@ construct {
     skos:prefLabel "the isMembershipProperty parameter"@en;
     skos:definition "A SHACL parameter"@en;
     sh:class rdfs:Resource;
-    sh:order 1;
+    sh:order 1.0;
     sh:path parameter:term.
 }
